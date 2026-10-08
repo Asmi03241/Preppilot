@@ -11,11 +11,12 @@
         <version>3.5.5</version>
         <relativePath/>
     </parent>
+    
 
     <groupId>com.preppilot</groupId>
     <artifactId>preppilot</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>PrepPilot</name>
     <description>AI-Powered Exam Preparation Platform</description>
@@ -31,6 +32,13 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <!-- Tomcat for WAR deployment -->
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-tomcat</artifactId>
+    <scope>provided</scope>
+</dependency>
 
         <!-- Spring Data JPA -->
         <dependency>
